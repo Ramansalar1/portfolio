@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my-portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    * {
+        margin: 0px 0px;
+        padding: 0px 0px;
+    }
+    html{
+    scroll-behavior: smooth;
+}
+
+    body {
+        /* background-color: rgb(10, 10, 28); */
+        background-color: black;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .navbar {
+        background-color: rgb(2, 2, 48);
+        position: sticky;
+        top: 1px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 70px;
+
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
+    }
+
+    nav ul li {
+        list-style: none;
+        margin: 0px 15px;
+
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .navbar li a:hover {
+        cursor: pointer;
+        /* font-size: 20px; */
+        color: purple;
+
+    }
+
+    .left {
+        font-size: 2rem;
+    }
+
+    .firstsection {
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 20px 40px;
+    }
+
+    .firstsection >div {
+        width: 45%;
+    }
+
+    .leftsection {
+        font-size: 2.5rem;
+        /* text-align: center; */
+        /* margin: 0px 20px; */
+        margin-left: 100px;
+        /* background-color: green; */
+    }
+    
+
+    .rightsection img {
+        width: 80%;
+        margin-left: 10px;
+        
+        background: none;
+    }
+
+    #element {
+        color: purple;
+    }
+    .secondsection{
+        height: 70vh;
+        max-width: 85vw;
+        margin: auto;
+        /* text-align: center; */
+        margin-top: 80px;
+    }
+    .secondsection h1{
+        font-size: 30px;
+    }
+    main hr{
+        border: 0;
+        background: rgb(167, 109, 167);
+        height: 1.2px;
+        margin: 20px 20px;
+    }
+    .textgrey{
+        color: grey;
+    }
+   
+    .secondsection .box{
+        background-color: white;
+        height: 2px;
+        width: 100%;
+        margin: 60px 0px;
+        display: flex;
+
+    }
+    .secondsection .vertical{
+        background-color: white;
+        height: 50px;
+        width: 2px;
+        margin: 0px 135px;
+        /* justify-content: space-around; */
+       
+    }
+    .verti1{
+        width: 157px;
+        position: relative;
+        top: 65px;
+        margin-left: -45px;
+        /* margin: auto; */
+        /* text-align: center; */
+    }
+    .content{
+        width: 157px;
+        position: relative;
+        top: 75px;
+        margin-left: -45px;
+        color: grey;
+        /* text-align: center; */
+    }
+    .thirdsection{
+        max-width:  85vw;
+        height: 65vh;
+        /* margin-top: 50px; */
+        margin: auto;
+        margin-top: 80px;
+        /* align-items: center; */
+        /* justify-content: center; */
+        
+    }
+    .thirdsec{
+        display: flex;
+        margin-top: 50px;
+    }
+    .thirdsec img{
+        width: 200px;
+        margin-top: 30px;
+        border-radius: 10px;
+    }
+    .project1{
+        border: 2px solid white;
+        border-radius: 10px;
+        width:30% ;
+        height: 250px;
+        margin: 0px 5px;
+        text-align: center;
+    }
+    .title{
+        /* text-align: center; */
+       font-size: 1.7em;
+    }
+    .wid{
+        height: 45px;
+        margin-top: 15px;
+        
+    }
+    footer{
+        height: 45vh;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(2, 2, 48);
+    }
+    .footer{
+        height: 20vh;
+        /* width: 80wh; */
+        /* background-color: rgb(1, 1, 17); */
+       
+        max-width: 1000px;
+        display: flex;
+        padding: 20px;
+        margin: auto;
+        /* margin-top: 40px; */
+        padding-top: 20px;
+        /* align-items: center; */
+        
+
+    } 
+    .foot1{
+        width: 30%;
+        height: 30px;
+        text-align: center;
+        /* margin-top: 50px; */
+    }
+    .footer ul li{
+        list-style: none;
+        text-decoration: none;
+    }
+    .span{
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+    }
+    .btn{
+        width: 50%;
+    }
+    .btn1{
+        color: white;
+        padding: 5px;
+        font-size: 16px;
+        background: none;
+        border: 2px solid purple;
+        border-radius: 5px;
+    }
+    
+    .btn1 a{
+        text-decoration: none;
+        /* color: white; */
+    }
+    .btn1:hover{
+        background: white;
+        color: black;
+    }
+    
+    
+</style>
+
+<body>
+    <nav class="navbar">
+        <div class="left">
+            Raman's<span style="color: purple;"> portfolio</span>
+        </div>
+        <div class="right">
+
+            <ul class="navlist ">
+                <li><a href="#">Home</a></li>
+                <li><a href="#footer">About</a></li>
+                <li><a href="#secondsection">Work</a></li>
+                <li><a href="contact.html">Contact me</a></li>
+                <li><a href="#thirdsection">projects</a></li>
+            </ul>
+
+        </div>
+
+
+    </nav>
+    <main>
+        <section class="firstsection">
+
+            <div class="leftsection">
+                Hii, My name is <span style="color: purple;">Raman</span>, 
+                <div>I am a passionate Learner and</div>
+                <span id="element"></span>
+                <div class="btn">
+                    <button class="btn1">Download Resume</button>
+                    <button class="btn1" ><a href="https://github.com/Ramansalar1">GitHub</a></button>
+                </div>
+            </div>
+
+
+            <div class="rightsection"><img src="mypic1.jpg"></div>
+
+        </section>
+        <hr>
+        <section class="secondsection" id="secondsection">
+            <span class="textgrey">what i have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <div class="verti1">
+                        (2021-2022)<br>c and c++ developer.
+                        
+                    </div>
+                    <div class="content">i have done programming in c and c++ for better understanding of coding</div>
+                </div>
+                <div class="vertical">
+                    <div class="verti1">
+                        (2022-2023)<br>python and java developer.
+                    </div>
+                    <div class="content">i have done programming in python and java for better understanding of coding</div>
+                </div>
+                <div class="vertical">
+                    <div class="verti1">
+                        (2023-2024)<br>Web developer and DSA.
+                    </div>
+                    <div class="content">i have done programming in DSA for better understanding of coding and done multiple projects in web development</div>
+                </div>
+                <div class="vertical">
+                    <div class="verti1">
+                        (2024-2025)<br>Advance DSA programmer.
+                    </div>
+                    <div class="content">next year i am aiming to practice DSA and more projects in web tech and AIML </div>
+                </div>
+                 
+            </div>
+        </section>
+        <hr>
+        <section class="thirdsection" id="thirdsection">
+            <div >
+                <span class="textgrey">projects i have done </span>
+                <h1 class="title">Projects</h1>
+            </div>
+            
+            <div class="thirdsec">
+                <div class="project1"><div class="wid">Age and Gender Detection using AI</div> 
+                    <div><img src="age.jpg" alt="" ></div>
+                </div>
+                <div class="project1"><div class="wid">Portfolio website</div>
+                    <div><img src="port.jpg" alt=""></div>
+                </div>
+                <div class="project1"><div class="wid">Website using nodejs and mongodb</div> 
+                    <div><img src="dance.jpeg" alt=""></div>
+                </div>
+                <div class="project1"><div class="wid">chemical propertires identifier using python and sql</div> 
+                    <div><img src="chemical.jpeg" alt=""></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <hr>
+
+    <footer id="footer">
+        <div class="footer">
+        <div class="foot1">
+            <h1><span style="color: purple;">Raman's</span> portfolio</h1>
+        </div>
+
+        <div class="foot1">
+            <ul>
+                <li>home</li>
+                <li>about</li>
+                <li>contact</li>
+                <li>services</li>
+            </ul>
+        </div>
+        <div class="foot1">
+            <ul>
+                <li>home</li>
+                <li>about</li>
+                <li>contact</li>
+                <li>services</li>
+            </ul>
+        </div>
+        <div class="foot1">
+            <ul>
+                <li>home</li>
+                <li>about</li>
+                <li>contact</li>
+                <li>services</li>
+            </ul>
+        </div>
+    </div>
+    <div class="span"><span class="textgrey">Copyright@2023ramanportfolio.</span></div>
+    
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['web developer.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>

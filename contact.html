@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0px 0px;
+        padding: 0px 0px;
+    }
+    
+    html{
+    scroll-behavior: smooth;
+}
+
+    body {
+        /* background-color: rgb(10, 10, 28); */
+        background-color: black;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .navbar {
+        background-color: rgb(2, 2, 48);
+        position: sticky;
+        top: 1px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 70px;
+
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
+    }
+
+    nav ul li {
+        list-style: none;
+        margin: 0px 15px;
+
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .navbar li a:hover {
+        cursor: pointer;
+        /* font-size: 20px; */
+        color: purple;
+
+    }
+    .left {
+        font-size: 2rem;
+    }
+    .contact{
+        max-width: 80%;
+        margin: auto;
+        margin-top: 90px;
+        height: 60vh;
+        /* background-color: rgb(4, 4, 60); */
+        /* border: 2px solid purple; */
+        border-radius: 10px;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        align-items: center;
+        margin: auto;
+        margin-top: 50px;
+    }
+    input{
+        margin: 10px 5px;
+        padding: 8px;
+        font-size: 16px;
+        background: none;
+        border: 2px solid white;
+        color: white;
+    }
+    .btn{
+        padding: 5px;
+        width: 50%;
+        margin-top: 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    .btn:hover{
+        background-color: purple;
+        color: white;
+    }
+</style>
+<body>
+    <nav class="navbar">
+        <div class="left">
+            Raman's<span style="color: purple;"> portfolio</span>
+        </div>
+        <div class="right">
+
+            <ul class="navlist ">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="index.html">Work</a></li>
+                <li><a href="contact.html">Contact me</a></li>
+                <li><a href="index.html">projects</a></li>
+            </ul>
+
+        </div>
+
+
+    </nav>
+    <section class="contact">
+    <form class="form" action="" method="post"> 
+        <input type="text" name="name" placeholder="your name" class="input" />
+        <input type="email" name="email" placeholder="Email Id" class="input"/>
+        <input type="text" name="phone" placeholder="contact no" class="input"/>
+        <input type="text" name="reason" placeholder="reason" class="input"/>
+        <button class="btn">submit</button>
+    </form>
+    </section>
+</body>
+</html>
